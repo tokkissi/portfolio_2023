@@ -1,0 +1,35 @@
+.typing-effect {
+  border-right: 0.1em solid black; /* 커서 효과를 위한 세로선 */
+  white-space: nowrap; /* 줄바꿈 없이 한 줄로 표시 */
+  overflow: hidden; /* 내용이 넘칠 경우 숨김 처리 */
+  display: inline-block; /* 필요한 만큼의 공간만 차지 */
+  color: #4f4a45; /* 전체 텍스트 색상을 녹색으로 설정 */
+}
+
+.deleting {
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+.highlight {
+  color: #f99417; /* 하이라이트 텍스트 색상을 보라색으로 설정 */
+  font-weight: 500;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: max-content;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
