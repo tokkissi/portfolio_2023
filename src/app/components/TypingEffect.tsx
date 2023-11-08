@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import "./typingEffect.css"; // CSS 파일을 import 합니다.
+import "./typingEffect.css";
 
 type TypingEffectProps = {
   text: string; // 전체 텍스트
-  highlightText: string; // 하이라이트할 텍스트
+  highlightText: string; // 하이라이트 할 텍스트
 };
 
 export default function TypingEffect({
@@ -17,8 +17,8 @@ export default function TypingEffect({
   const typingDelay = 80;
   const deletingDelay = 30;
 
-  // 타이핑 애니메이션을 위한 steps 함수의 인자를 문자열의 길이에 맞춥니다.
-  const typingSteps = text.length; // 텍스트의 전체 길이로 설정합니다.
+  // 타이핑 애니메이션을 위한 steps 함수의 인자를 문자열의 길이에 맞춤
+  const typingSteps = text.length; // 텍스트의 전체 길이로 설정
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
@@ -33,7 +33,7 @@ export default function TypingEffect({
     else if (!isDeleting && displayText.length === text.length) {
       timer = setTimeout(() => {
         setIsDeleting(true);
-      }, 1500); // 1.5초 후에 삭제 상태로 전환합니다.
+      }, 1500); // 잠시 후에 삭제 상태로 전환
     }
     // 삭제 중이고 텍스트가 아직 남아 있다면
     else if (isDeleting && displayText.length > 0) {
@@ -59,7 +59,7 @@ export default function TypingEffect({
       }}
     >
       {displayText
-        .split(new RegExp(`(${highlightText})`, "g")) // 하이라이트 텍스트를 기준으로 분할합니다.
+        .split(new RegExp(`(${highlightText})`, "g")) // 하이라이트 텍스트를 기준으로 분할.
         .map((part, i) =>
           part === highlightText ? (
             <span key={i} className="highlight">

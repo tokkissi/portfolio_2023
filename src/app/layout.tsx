@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sans.className}>{children}</body>
+      <body className={`${sans.className} max-w-5xl mx-auto`}>{children}</body>
     </html>
   );
 }
