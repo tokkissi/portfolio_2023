@@ -1,21 +1,21 @@
 .skill {
-  width: 160px;
-  height: 160px;
+  width: 80px;
+  height: 80px;
   position: relative;
 }
 
 .outer {
-  height: 160px;
-  width: 160px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
 .inner {
-  height: 120px;
-  width: 120px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
 .localCircle {
   fill: none;
   stroke: url(#GradientColor);
-  stroke-width: 20px;
+  stroke-width: 10px;
 }
 
 .localSvg {

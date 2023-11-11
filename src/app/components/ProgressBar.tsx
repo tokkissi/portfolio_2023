@@ -13,7 +13,7 @@ export default function ProgressBar({
   animationDuration,
 }: ProgressBarProps) {
   const [counter, setCounter] = useState(0);
-  const fullDasharray = 2 * Math.PI * 70; // 반지름 70으로 원 둘레 구하기
+  const fullDasharray = 2 * Math.PI * 35; // 반지름 70으로 원 둘레 구하기
   const [dashoffset, setDashoffset] = useState(fullDasharray); // counter 값에 따라 dashoffset을 계산하여, 원이 채워지는 비율을 counter의 값과 동기화하여 업데이트함
 
   useEffect(() => {
@@ -51,22 +51,22 @@ export default function ProgressBar({
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
-            width="160px"
-            height="160px"
+            width="80px"
+            height="80px"
             className={styles.localSvg}
           >
             <defs>
               <linearGradient id="GradientColor">
-                <stop offset="0%" stop-color="#e91e63" />
-                <stop offset="100%" stop-color="#673ab7" />
+                <stop offset="0%" stopColor="#e91e63" />
+                <stop offset="100%" stopColor="#673ab7" />
               </linearGradient>
             </defs>
             <circle
               className={styles.localCircle}
-              cx="80"
-              cy="80"
-              r="70"
-              stroke-linecap="round"
+              cx="40"
+              cy="40"
+              r="35"
+              strokeLinecap="round"
               strokeDasharray={fullDasharray}
               strokeDashoffset={dashoffset}
             />
