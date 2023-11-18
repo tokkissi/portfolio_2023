@@ -53,7 +53,9 @@ export default function TypingEffect({
 
   return (
     <div
-      className={`typing-effect ${isDeleting ? "deleting" : ""}`}
+      className={`typing-effect min-h-[1.5rem] font-bold ${
+        isDeleting ? "deleting" : ""
+      }`}
       style={{
         animation: `typing 3.5s steps(${typingSteps}, end), blink-caret .75s step-end infinite`,
       }}
