@@ -92,7 +92,7 @@ export default function Contact() {
         <p className="mt-2 mb-4 text-gray-500">Thank you 🐰</p>
         <Image
           alt="잘부탁드립니다"
-          src={"/images/익명이_찡긋.png"}
+          src={"/images/토끼씨_프로필.png"}
           width={200}
           height={200}
         />
