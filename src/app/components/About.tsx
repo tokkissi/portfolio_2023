@@ -3,7 +3,10 @@ import UserProfileInfo from "./UserProfileInfo";
 
 export default function About() {
   return (
-    <div className="flex flex-col w-[736px] h-[330px] px-4 shadow-customBox gap-4 bg-white">
+    <div
+      className="flex flex-col w-[736px] h-[330px] px-4 shadow-customBox gap-4 bg-white scroll-mt-10"
+      id="about"
+    >
       <p className="text-3xl font-bold mt-6 mx-auto">ABOUT</p>
       <div className="flex mb-auto">
         <Image

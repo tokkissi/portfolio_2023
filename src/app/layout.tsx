@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import ParticlesBackground from "./components/ParticlesBackground";
+import NavigationBar from "./components/NavigationBar";
+import Footer from "./components/Footer";
 
 const sans = Open_Sans({ subsets: ["latin"] });
 
@@ -16,10 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${sans.className} max-w-5xl mx-auto bg-[#eee]`}>
+        <NavigationBar />
         <ParticlesBackground />
         {children}
+        <Footer />
       </body>
     </html>
   );
