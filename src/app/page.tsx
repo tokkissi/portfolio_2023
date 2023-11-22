@@ -2,6 +2,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Intro from "./components/Intro";
 import MainSkills from "./components/MainSkills";
+import Projects from "./components/Projects";
 import TypingEffect from "./components/TypingEffect";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Intro />
       <About />
       <MainSkills />
+      <Projects />
       <Contact />
     </main>
   );
