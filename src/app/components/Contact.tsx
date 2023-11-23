@@ -87,7 +87,7 @@ export default function Contact() {
       className="w-full px-4 flex justify-center items-center scroll-mt-10"
       id="contact"
     >
-      <div className="w-96 h-80 flex flex-col justify-center items-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white">
+      <div className="w-96 h-80 flex flex-col justify-center items-center shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white rounded-sm">
         <p className="text-3xl font-bold">CONTACT</p>
         <p className="mt-2 mb-4 text-gray-500">Thank you 🐰</p>
         <Image

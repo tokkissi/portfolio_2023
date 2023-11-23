@@ -19,8 +19,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   tech,
 }) => {
   return (
-    <div className="group relative flex rounded cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-      <div className="h-60 w-full relative">
+    <div className="group relative flex rounded cursor-pointer items-center justify-center overflow-hidden">
+      <div className="h-56 w-96 relative transition-shadow hover:shadow-xl hover:shadow-black/30">
         <Image
           className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
           src={imageSrc}
@@ -59,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-neutral-900 py-2 px-4 font-com text-sm capitalize text-white shadow shadow-black/60 hover:bg-[#eee] hover:text-customBlack hover:font-bold"
+                className="rounded-full bg-neutral-400 py-2 px-4 font-com text-sm capitalize shadow shadow-black/60 hover:bg-[#eee] hover:text-customBlack hover:font-bold"
               >
                 Source Code
               </a>

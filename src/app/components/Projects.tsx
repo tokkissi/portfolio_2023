@@ -1,3 +1,4 @@
+import Carousel from "./Carousel";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
@@ -79,9 +80,9 @@ export default function Projects() {
       myWork: "",
     },
     {
-      title: "학습용 Next.js 13 게시판",
+      title: "Next.js 13 학습용 게시판",
       imageSrc: "/images/게시판.png",
-      description: `Next.js로 구현한 간단한 CRUD 가능한 게시판 웹사이트`,
+      description: `Next.js 개인 학습용으로 만든 CRUD 가능한 게시판`,
       tech: "Next.js 13, TypeScript, Tailwind CSS, Next-Auth, React query, Mongo DB",
       githubLink: "",
       myWork: "",
@@ -91,8 +92,9 @@ export default function Projects() {
   return (
     <div className="w-full mx-auto py-8">
       <p className="text-center text-3xl font-bold my-6">Projects</p>
-      <p className="font-bold mb-2">주요 프로젝트</p>
-      <div className="grid grid-cols-2 gap-4">
+      <p className="font-bold mb-4">주요 프로젝트</p>
+
+      <Carousel>
         {projectList.map((project, index) => (
           <ProjectCard
             key={index}
@@ -104,11 +106,11 @@ export default function Projects() {
             tech={project.tech}
           />
         ))}
-      </div>
-      <p className="mt-8 font-bold mb-2">
+      </Carousel>
+      <p className="mt-8 font-bold mb-4">
         학습용 토이 프로젝트 및 클론 프로젝트
       </p>
-      <div className="grid grid-cols-3 gap-4">
+      <Carousel>
         {cloneProjectList.map((project, index) => (
           <ProjectCard
             key={index}
@@ -120,7 +122,7 @@ export default function Projects() {
             tech={project.tech}
           />
         ))}
-      </div>
+      </Carousel>
     </div>
   );
 }
