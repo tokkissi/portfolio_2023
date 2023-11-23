@@ -11,7 +11,7 @@ export default function UserProfileInfo() {
     <div className="text-customBlack text-xs space-y-2 ml-32 h-full flex flex-col justify-center">
       <p className="flex items-center space-x-2">
         <BiSolidUser size={20} />
-        <span>김제원</span>
+        <span>김제원 (닉네임: 토끼씨)</span>
       </p>
       <p className="flex items-center space-x-2">
         <FaBirthdayCake size={20} />
