@@ -26,7 +26,7 @@ export default function Projects() {
       description: `개인 프로젝트. AI 텍스트 게임 및 AI 이미지 생성 웹사이트`,
       tech: "Next.js 13, TypeScript, Mongo DB, Tailwind CSS, Next-Auth, React Query, ChatGPT API, DALL·E API, SpeechRecognition API",
       githubLink: "https://github.com/tokkissi/team8282-tripMatch",
-      myWork: "All works(FE & BE)",
+      myWork: "All works(FE & BE), pc 및 모바일 반응형 UI",
     },
   ];
 
@@ -90,7 +90,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="w-full mx-auto py-8" id="projects">
+    <div className="w-full mx-auto" id="projects">
       <p className="text-center text-3xl font-bold my-6">Projects</p>
       <p className="font-bold mb-4">주요 프로젝트</p>
 

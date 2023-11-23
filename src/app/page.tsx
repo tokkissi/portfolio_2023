@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
+import HorizontalDottedLine from "./components/HorizontalDottedLine";
 import Intro from "./components/Intro";
 import MainSkills from "./components/MainSkills";
 import Projects from "./components/Projects";
@@ -13,9 +14,13 @@ export default function Home() {
         highlightText="김제원"
       />
       <Intro />
+      <HorizontalDottedLine />
       <About />
+      <HorizontalDottedLine />
       <MainSkills />
+      <HorizontalDottedLine />
       <Projects />
+      <HorizontalDottedLine />
       <Contact />
     </main>
   );
