@@ -90,7 +90,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="w-full mx-auto py-8">
+    <div className="w-full mx-auto py-8" id="projects">
       <p className="text-center text-3xl font-bold my-6">Projects</p>
       <p className="font-bold mb-4">주요 프로젝트</p>
 

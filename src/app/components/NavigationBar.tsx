@@ -24,9 +24,10 @@ export default function NavigationBar() {
         </a>
       </div>
       {/* 우측 네비게이션 */}
-      <div className="flex gap-4 font-bold">
+      <div className="flex gap-6 font-bold">
         <a href="#about">{"< About />"}</a>
         <a href="#main-skills">{"< Main Skills />"}</a>
+        <a href="#projects">{"< Projects />"}</a>
         <a href="#contact">{"< Contact />"}</a>
       </div>
     </nav>
