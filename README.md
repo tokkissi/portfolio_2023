@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio (2023 Edition)
+본 프로젝트는 김제원 개발 능력과 과거 진행했던 프로젝트를 소개하기 위한 개인 포트폴리오 웹사이트입니다
 
-## Getting Started
+배포 URL: [https://portfolio-2023-tokkissi.vercel.app](https://portfolio-2023-tokkissi.vercel.app)  
+![image](https://github.com/tokkissi/Command-Survival/assets/53216523/d551f6ca-bf90-47eb-aea0-a3767b038ebe)
+<br />  
 
-First, run the development server:
+---
+<br />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 목차
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. [프로젝트 소개](#프로젝트-소개)
+2. [사용한 기술 스택](#기술-스택)
+3. [기능 설명 및 기능 별 시연 영상](#기능-설명-및-기능-별-시연-영상)
+4. [개발자 정보](#개발자-정보)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 사용한 기술 스택
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js 13
+- TypeScript
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br />
 
-## Deploy on Vercel
+## 기능 설명 및 기능 별 시연 영상
+- **타이핑 효과(TypingEffect)**: `setTimeout`을 활용해서 방문자에게 환영 인사말을 동적인 타이핑 효과로 표시합니다
+  ![포트폴리오-타이핑효과](https://github.com/tokkissi/Command-Survival/assets/53216523/f0dc2e7c-4aa4-4307-841f-b9ca2502c92b)
+<br />
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **주요 기술(MainSkills)**: 사용자가 스크롤하여 해당 섹션에 도달하면 `IntersectionObserver`와 `useEffect`, `setInterval`을 사용하여 기술 성취도만큼 원이 채워지도록 애니메이션을 표시합니다
+  ![포트폴리오-메인스킬](https://github.com/tokkissi/Command-Survival/assets/53216523/8a140e15-0c60-463c-98fb-09080c57925e)
+<br />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **프로젝트(Projects)**: `useState`와 CSS의 `transform: translateX, translateY`를 이용해 3D 캐러셀을 구현하였습니다. 이는 외부 라이브러리 없이 구현되었습니다
+![포트폴리오-프로젝트](https://github.com/tokkissi/Command-Survival/assets/53216523/03ed0138-1ed1-4629-8d46-a686b8e8ffc5)
+<br />
+
+- **연락처(Contact)**: `nodemailer` 라이브러리를 사용하여 이메일 전송 기능을 구현, 사용자가 바로 이메일을 보낼 수 있게 했습니다
+![포트폴리오-메일전송](https://github.com/tokkissi/Command-Survival/assets/53216523/59338e1a-ea53-4b21-9b3e-024c5db8d9d4)
+<br />
+
+- **마우스 이펙트**: `react-tsparticles` 라이브러리를 사용하여 페이지 내에서 마우스 클릭 시 나타나는 시각적 이펙트를 추가했습니다
+![포트폴리오-클릭효과](https://github.com/tokkissi/Command-Survival/assets/53216523/30b6cc05-7a44-43f3-b956-e78ce7df93d7)
+<br />
+
+
+<br />
+
+## 개발자 정보
+
+- 개발자: tokkissi
+- 이메일: alal4674@gmail.com
+- GitHub: https://github.com/tokkissi
+
+이 프로젝트는 패키지 관리를 위해 npm 대신 yarn을 사용하였으며 Vercel을 통해 빌드 및 배포되었습니다.
