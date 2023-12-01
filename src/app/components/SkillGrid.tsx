@@ -65,6 +65,16 @@ export default function SkillGrid() {
       percentage: 60,
     },
     {
+      skillName: "WebSocket",
+      description: "실시간 양방향 통신 기능을 구현할 수 있습니다",
+      percentage: 45,
+    },
+    {
+      skillName: "PWA",
+      description: "Next.js 프로젝트에 PWA를 적용할 수 있습니다",
+      percentage: 40,
+    },
+    {
       skillName: "stable diffusion",
       description: "원하는 배경이나 캐릭터의 이미지를 AI로 생성 가능합니다",
       percentage: 45,
