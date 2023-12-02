@@ -44,6 +44,21 @@ export default function SkillGrid() {
       percentage: 60,
     },
     {
+      skillName: "Redux-Toolkit",
+      description: "프론트엔드 상태 관리를 위해 사용할 수 있습니다",
+      percentage: 50,
+    },
+    {
+      skillName: "Zustand",
+      description: "Redux-Toolkit 보다 사용하기 쉬워 선호합니다",
+      percentage: 60,
+    },
+    {
+      skillName: "React Query",
+      description: "서버 상태 관리를 위해 사용할 수 있습니다",
+      percentage: 60,
+    },
+    {
       skillName: "Mongo DB",
       description:
         "Next.js와 함께 사용하여 데이터를 저장하고 관리할 수 있습니다",
@@ -51,8 +66,8 @@ export default function SkillGrid() {
     },
     {
       skillName: "Figma",
-      description: "기획 시 UI/UX 디자인을 간단히 그릴 수 있습니다",
-      percentage: 25,
+      description: "기획 시 UI/UX 디자인을 간단히 그리고 이해할 수 있습니다",
+      percentage: 40,
     },
     {
       skillName: "공공 데이터 포털 API",
@@ -82,7 +97,7 @@ export default function SkillGrid() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-y-2">
+    <div className="grid grid-cols-2 gap-y-6">
       {skillList.map((skill, index) => (
         <SkillCard
           key={index}
