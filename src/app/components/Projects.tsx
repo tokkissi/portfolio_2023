@@ -49,6 +49,14 @@ export default function Projects() {
       myWork: "",
     },
     {
+      title: "wanted-pre-onboarding-frontend",
+      imageSrc: "/images/원티드프론트엔드.png",
+      description: "원티드 프리온보딩 프론트엔드 사전 과제",
+      tech: "React, TypeScript, Tailwind CSS",
+      githubLink: "https://wanted-pre-onboarding-frontend-tokkissi.vercel.app",
+      myWork: "",
+    },
+    {
       title: "드림코딩 instagram 클론",
       imageSrc: "/images/인스타그램.png",
       description: "드림코딩 Next.js 13 강의 중 instagram 클론",
