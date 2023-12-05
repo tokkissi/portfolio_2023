@@ -5,6 +5,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaGraduationCap } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { FaBloggerB } from "react-icons/fa";
+import { RxNotionLogo } from "react-icons/rx";
 
 export default function UserProfileInfo() {
   return (
@@ -36,6 +37,12 @@ export default function UserProfileInfo() {
       <p className="flex items-center space-x-2">
         <FaBloggerB size={20} />
         <a href="https://tokkic.tistory.com">https://tokkic.tistory.com</a>
+      </p>
+      <p className="flex items-center space-x-2">
+        <RxNotionLogo size={20} />
+        <a href="https://www.notion.so/2f4009cac273405898a326587fd31af3?pvs=4">
+          Notion page
+        </a>
       </p>
     </div>
   );
