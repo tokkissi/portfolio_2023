@@ -22,7 +22,7 @@ export function sendEmail(params: emailFormType) {
   return trasnporter.sendMail({
     from: params.from,
     to: process.env.AUTH_USER,
-    subject: `[Challenge BLOG] ${params.subject}`,
+    subject: `[(구)포트폴리오] ${params.subject}`,
     html: `
     <h1>${params.subject}</h1>
     <div>${params.message}</div>
